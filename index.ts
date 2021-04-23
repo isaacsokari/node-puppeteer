@@ -54,7 +54,7 @@ app.post('/new', (req: Request, res: Response) => {
       }
 
       // Launching the Puppeteer controlled headless browser and navigate to the url
-      const browser = await puppeteer.launch();
+      const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
       const page = await browser.newPage();
       await page.goto(url.trim());
 
