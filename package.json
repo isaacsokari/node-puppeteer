@@ -1,0 +1,35 @@
+{
+  "name": "ts-get-screenshot",
+  "version": "1.0.0",
+  "description": "Typescript Node application to take screenshots of Web pages.",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "dev": "ts-node-dev --respawn index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaacsokari/node-puppeteer.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Isaac Sokari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isaacsokari/node-puppeteer/issues"
+  },
+  "homepage": "https://github.com/isaacsokari/node-puppeteer#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-sslify": "^1.2.0",
+    "puppeteer": "^9.0.0",
+    "ts-node": "^9.1.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/puppeteer": "^5.4.3",
+    "ts-node-dev": "^1.1.6"
+  }
+}
