@@ -38,7 +38,7 @@ app.post('/new', (req: Request, res: Response) => {
 
       const { url } = req.body;
       // const tag = Date.now();
-      const tag = url.trim();
+      const tag = encodeURIComponent(url.trim().split('://')[1]);
 
       try {
         const myUrl: any = new URL(url);
