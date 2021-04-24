@@ -92,7 +92,7 @@ body {
   padding: 2rem;
 }
 
-header {
+body > header {
   padding: 3rem 1.5rem;
   justify-self: flex-start;
 }

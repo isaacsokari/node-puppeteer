@@ -18,7 +18,10 @@
     </header>
 
     <main class="stack text-align:center">
-      <h2>Enter the website URL</h2>
+      <header>
+        <h2>Enter the website URL</h2>
+        <p><i>e.g. "https://google.com"</i></p>
+      </header>
 
       <form action="/new" method="POST" class="stack">
         <label for="url">Website:</label>
@@ -26,6 +29,8 @@
           type="text"
           id="url"
           placeholder="e.g. https://google.com"
+          value="https://"
+          pattern="https://[a-zA-Z]{1,}.*(\.[a-zA-Z]{1,8})$"
           name="url"
           required
         />
